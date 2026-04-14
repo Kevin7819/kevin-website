@@ -1,0 +1,125 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --color-portfolio-bg: #050505;
+    --color-portfolio-accent: #ff0055;
+    --color-portfolio-accent-glow: rgba(255, 0, 85, 0.5);
+    --color-portfolio-cyan: #00f2ff;
+    --color-portfolio-text: #ffffff;
+    --color-portfolio-dim: #94a3b8;
+    --color-portfolio-card: rgba(255, 255, 255, 0.03);
+    --color-portfolio-border: rgba(255, 255, 255, 0.08);
+
+    --font-body: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Custom base styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-portfolio-bg);
+    color: var(--color-portfolio-text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+/* Grid background pattern with radial mask */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--color-portfolio-border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--color-portfolio-border) 1px, transparent 1px);
+    background-size: 50px 50px;
+    mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+/* Scroll-triggered fade-in animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Card hover effect */
+.card-hover {
+    transition: all 0.4s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    border-color: var(--color-portfolio-accent);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 0, 85, 0.15);
+}
+
+/* Gradient text effect */
+.gradient-text {
+    background: linear-gradient(to right, #ffffff, var(--color-portfolio-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Typing cursor animation */
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typing-cursor::after {
+    content: '|';
+    animation: blink 1s infinite;
+    color: var(--color-portfolio-accent);
+}
+
+/* Active nav link indicator */
+.nav-link.active {
+    color: var(--color-portfolio-accent);
+}
+
+/* Timeline left border accent */
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 2px solid var(--color-portfolio-accent);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-portfolio-accent);
+}
+
+/* Staggered animation for skill badges */
+.badge-stagger {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.badge-stagger.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
