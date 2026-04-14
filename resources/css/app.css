@@ -11,6 +11,7 @@
     --color-portfolio-accent-glow: rgba(255, 0, 85, 0.5);
     --color-portfolio-cyan: #00f2ff;
     --color-portfolio-text: #ffffff;
+    --color-portfolio-text-relaxed: #e2e8f0;
     --color-portfolio-dim: #94a3b8;
     --color-portfolio-card: rgba(255, 255, 255, 0.03);
     --color-portfolio-border: rgba(255, 255, 255, 0.08);
@@ -26,9 +27,17 @@ html {
 
 body {
     background-color: var(--color-portfolio-bg);
-    color: var(--color-portfolio-text);
+    color: var(--color-portfolio-text-relaxed);
     font-family: var(--font-body);
     overflow-x: hidden;
+}
+
+.text-portfolio-text-relaxed {
+    color: var(--color-portfolio-text-relaxed);
+}
+
+h1, h2, h3, h4, h5, h6, .font-bold, .font-extrabold {
+    color: var(--color-portfolio-text);
 }
 
 /* Grid background pattern with radial mask */
@@ -122,4 +131,46 @@ body::before {
 .badge-stagger.is-visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Section Title - Large Professional */
+.section-title {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+/* Language Selector - Styled with globe icon */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.language-switcher svg {
+    width: 16px;
+    height: 16px;
+}
+
+.language-switcher a {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-portfolio-dim);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.language-switcher a:hover {
+    color: var(--color-portfolio-accent);
+    background: rgba(255, 0, 85, 0.1);
+}
+
+.language-switcher a.active {
+    color: var(--color-portfolio-accent);
+    background: rgba(255, 0, 85, 0.15);
 }
