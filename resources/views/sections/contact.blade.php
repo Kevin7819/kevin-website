@@ -11,18 +11,17 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <!-- Contact Info -->
             <div class="space-y-6">
-                <a href="mailto:{{ $personal['email'] }}"
-                   class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover no-underline group">
+                <div class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5">
                     <div class="w-12 h-12 rounded-xl bg-portfolio-accent/10 flex items-center justify-center flex-shrink-0">
                         <svg class="w-6 h-6 text-portfolio-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
                     <div>
-                        <p class="text-portfolio-text font-semibold group-hover:text-portfolio-accent transition-colors">Email</p>
-                        <p class="text-portfolio-dim text-sm">{{ $personal['email'] }}</p>
+                        <p class="text-portfolio-text font-semibold">Email</p>
+                        <p class="text-portfolio-dim text-sm">Usa el formulario para contactarme</p>
                     </div>
-                </a>
+                </div>
 
                 <a href="{{ $personal['linkedin'] }}"
                    target="_blank"
@@ -53,9 +52,27 @@
                 </div>
             </div>
 
-            <!-- Contact Form (UI Only) -->
+            <!-- Contact Form -->
             <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover">
-                <form action="#" method="POST" class="space-y-5">
+                @if(session('success'))
+                    <div class="mb-5 p-4 bg-green-500/10 border border-green-500/30 rounded-xl text-green-400 text-sm">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <strong>¡Mensaje enviado!</strong> Me pondré en contacto contigo lo antes posible.
+                    </div>
+                @endif
+
+                @if(session('error'))
+                    <div class="mb-5 p-4 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm">
+                        <svg class="w-5 h-5 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <strong>Error:</strong> {{ session('error') }}
+                    </div>
+                @endif
+
+                <form action="{{ route('contact.send') }}" method="POST" class="space-y-5">
                     @csrf
                     <div>
                         <label for="name" class="block text-sm font-semibold text-portfolio-text mb-2">

@@ -11,8 +11,8 @@
   <a href="https://www.linkedin.com/in/kevin-venegas-berm%C3%BAdez-22b314239" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="mailto:kvenegasbermudez@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  <a href="https://github.com/Kevin7819/kevin-website#-lets-connect" target="_blank">
+    <img src="https://img.shields.io/badge/Contact-Form-28a745?style=for-the-badge&logo=maildotru&logoColor=white" alt="Contact Form" />
   </a>
   <a href="https://github.com/Kevin7819" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
@@ -104,8 +104,8 @@ val kevin = Developer(
   <a href="https://www.linkedin.com/in/kevin-venegas-berm%C3%BAdez-22b314239" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Kevin%20Venegas-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" />
   </a>
-  <a href="mailto:kvenegasbermudez@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-Contact%20Me-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  <a href="https://github.com/Kevin7819/kevin-website#-lets-connect" target="_blank">
+    <img src="https://img.shields.io/badge/Contact-Form-green?style=for-the-badge&logo=maildotru&logoColor=white" alt="Contact Form" />
   </a>
 </p>
 
