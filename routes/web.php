@@ -29,13 +29,14 @@ Route::post('/contact', function (Request $request) {
 
     // Send email
     try {
-        \Illuminate\Support\Facades\Mail::raw($validated['message'], function ($mail) use ($validated) {
+        \Illuminate\Support\Facades\Mail::html($validated['message'], function ($mail) use ($validated) {
             $mail->to('kevinabelvenegasbermudez@gmail.com')
                 ->subject("Nuevo mensaje de contacto de {$validated['name']}")
                 ->replyTo($validated['email'], $validated['name']);
         });
     } catch (\Exception $e) {
-        RateLimiter::clear($key); // Allow retry on failure
+        \Illuminate\Support\Facades\Log::error('Contact form mail error: '.$e->getMessage());
+        RateLimiter::clear($key);
         return back()->with('error', 'Error al enviar el mensaje. Intenta nuevamente.');
     }
 
