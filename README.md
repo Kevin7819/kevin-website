@@ -22,7 +22,7 @@
 ---
 
 <a href="https://www.una.ac.cr/" target="_blank">
-  <img align="right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/LogoUNA.svg/800px-LogoUNA.svg.png" width="100" alt="Logo-UNA"/>
+  <img align="right" src="https://raw.githubusercontent.com/Kevin7819/kevin-website/main/public/images/una-logo.png" width="100" alt="Logo UNA"/>
 </a>
 
 ## 🌟 What I Do
