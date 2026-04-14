@@ -98,29 +98,6 @@ val kevin = Developer(
 
 ---
 
-## 📊 GitHub Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Kevin7819&show_icons=true&theme=tokyonight&hide_border=true" width="48%" alt="GitHub Stats" />
-  <img src="http://github-readme-streak-stats.herokuapp.com?user=Kevin7819&theme=tokyonight&hide_border=true" width="48%" alt="Streak Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Kevin7819&theme=tokyonight&column=6&margin-w=10&no-frame=true" width="90%" alt="Trophy" />
-</p>
-
----
-
-## 🎯 2025 Roadmap
-
-- [ ] ☁️ Master **AWS / Azure** cloud services
-- [ ] 🚀 Launch a **SaaS product** to production
-- [ ] 🤖 Deepen **AI/ML integration** skills (LLMs, RAG, agents)
-- [ ] 🌍 Contribute to **open-source projects**
-- [ ] 🗣️ Advance **English proficiency** (B2 → C1)
-
----
-
 ## 📫 Let's Connect!
 
 <p align="center">
