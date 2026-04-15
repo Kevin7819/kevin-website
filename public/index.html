@@ -1,25 +1,918 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Abel Venegas Bermúdez — Ingeniero de Sistemas | Desarrollador Full-Stack</title>
-    <meta name="description" content="Egresado de Ingeniería en Sistemas con experiencia en desarrollo Full Stack.">
-
+    <meta name="description" content="Egresado de Ingeniería en Sistemas con experiencia en desarrollo Full Stack. Especialista en Laravel, React y Java.">
+    
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/build/assets/app-DcAM6Ezq.css">
+</head>
+<body class="antialiased bg-[#020617] text-white">
+    <div class="fixed top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-portfolio-accent/50 rounded-full blur-[80px] z-[-2] opacity-[0.15] pointer-events-none" aria-hidden="true"></div>
 
+    <div id="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Abel Venegas Bermúdez — Ingeniero de Sistemas | Desarrollador Full-Stack</title>
+    <meta name="description" content="Egresado de Ingeniería en Sistemas con experiencia en desarrollo Full Stack utilizando Java (Spring Boot), React, PHP (Laravel) y bases de datos relacionales. Experiencia en diseño e integración de APIs REST, desarrollo de interfaces web modernas y automatización de procesos. Orientado a la calidad del código, resolución de problemas y aprendizaje rápido en entornos colaborativos.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/build/assets/app-DcAM6Ezq.css">
-</head>
-<body class="antialiased bg-[#020617] text-white">
+    <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-DcAM6Ezq.css" /><link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/app-CoBtstTC.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-DcAM6Ezq.css" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-CoBtstTC.js"></script></head>
+<body class="antialiased">
 
+    <!-- Ambient glow -->
     <div class="fixed top-[-10%] right-[-10%] w-[40vw] h-[40vw] bg-portfolio-accent/50 rounded-full blur-[80px] z-[-2] opacity-[0.15] pointer-events-none" aria-hidden="true"></div>
 
-    <div id="app">
+    <!-- Sticky Header with Glassmorphism -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl bg-portfolio-bg/80 border-b border-portfolio-border/50"
+            x-data="{ mobileOpen: false }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="font-mono font-extrabold text-xl text-portfolio-text no-underline tracking-tight">
+                    KV<span class="text-portfolio-accent">.</span>DEV
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-6 ml-16">
+                    <a href="#proyectos" class="text-portfolio-dim text-sm font-semibold hover:text-portfolio-accent transition-colors duration-300 no-underline">Proyectos</a>
+                    <a href="#habilidades" class="text-portfolio-dim text-sm font-semibold hover:text-portfolio-accent transition-colors duration-300 no-underline">Habilidades</a>
+                    <a href="#experiencia" class="text-portfolio-dim text-sm font-semibold hover:text-portfolio-accent transition-colors duration-300 no-underline">Experiencia</a>
+                </nav>
+                
+                <!-- Header Actions -->
+                <div class="hidden md:flex items-center gap-5 ml-auto">
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/Kevin7819"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="text-portfolio-dim hover:text-portfolio-accent transition-colors"
+                       aria-label="GitHub">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    
+                    <!-- CV Button -->
+                    <div x-data="{ cvOpen: false }" class="relative">
+                        <button @click="cvOpen = !cvOpen"
+                                @click.outside="cvOpen = false"
+                                class="border border-portfolio-accent text-portfolio-accent px-4 py-2 rounded-lg text-sm font-extrabold uppercase tracking-wider hover:scale-105 hover:text-portfolio-accent hover:border-portfolio-accent active:scale-95 active:opacity-80 transition-all duration-300">
+                            CV
+                        </button>
+                        <div x-show="cvOpen"
+                             x-cloak
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 -translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             class="absolute right-0 mt-2 w-40 bg-portfolio-card border border-portfolio-border/50 rounded-xl overflow-hidden z-50 shadow-xl">
+                            <a href="/cv/Kevin Venegas Bermúdez - CV - ES.pdf"
+                               target="_blank"
+                               class="flex items-center gap-2 px-4 py-3 text-portfolio-dim hover:bg-portfolio-accent/10 hover:text-portfolio-accent transition-colors no-underline">
+                                <span>🇪🇸</span>
+                                <span class="text-sm">Español</span>
+                            </a>
+                            <a href="/cv/Kevin Venegas Bermúdez - CV - EN.pdf"
+                               target="_blank"
+                               class="flex items-center gap-2 px-4 py-3 text-portfolio-dim hover:bg-portfolio-accent/10 hover:text-portfolio-accent transition-colors no-underline">
+                                <span>🇺🇸</span>
+                                <span class="text-sm">English</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+<!-- Language Toggle -->
+                    <div class="language-switcher">
+                        <a href="http://127.0.0.1:8000?lang=es" class="active">ES</a>
+                        <span class="text-portfolio-dim">/</span>
+                        <a href="http://127.0.0.1:8000?lang=en" class="">EN</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <button @click="mobileOpen = !mobileOpen"
+                        class="md:hidden text-portfolio-text p-2 focus:outline-none focus:ring-2 focus:ring-portfolio-accent rounded"
+                        aria-label="Toggle menu"
+                        x-ref="menuBtn">
+                    <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                    <svg x-show="mobileOpen" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav x-show="mobileOpen"
+                 x-cloak
+                 x-transition:enter="transition ease-out duration-300"
+                 x-transition:enter-start="opacity-0 -translate-y-4"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-200"
+                 x-transition:leave-start="opacity-100 translate-y-0"
+                 x-transition:leave-end="opacity-0 -translate-y-4"
+                 @click.away="mobileOpen = false"
+                 class="md:hidden py-4 border-t border-portfolio-border/50">
+                <div class="flex flex-col items-center gap-3">
+                    <a href="#proyectos" @click="mobileOpen = false" class="text-portfolio-dim text-base font-semibold hover:text-portfolio-accent transition-colors no-underline py-2">Proyectos</a>
+                    <a href="#habilidades" @click="mobileOpen = false" class="text-portfolio-dim text-base font-semibold hover:text-portfolio-accent transition-colors no-underline py-2">Habilidades</a>
+                    <a href="#experiencia" @click="mobileOpen = false" class="text-portfolio-dim text-base font-semibold hover:text-portfolio-accent transition-colors no-underline py-2">Experiencia</a>
+                    <a href="#contacto" @click="mobileOpen = false" class="text-portfolio-dim text-base font-semibold hover:text-portfolio-accent transition-colors no-underline py-2">Contacto</a>
+                    
+                    <!-- Mobile Actions -->
+                    <div class="flex items-center gap-4 pt-3 mt-2 border-t border-portfolio-border/50">
+                        <a href="https://github.com/Kevin7819"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="text-portfolio-dim hover:text-portfolio-accent transition-colors"
+                           aria-label="GitHub">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <span class="text-portfolio-dim">|</span>
+                        <a href="/cv/Kevin Venegas Bermúdez - CV - ES.pdf" target="_blank" class="text-portfolio-dim hover:text-portfolio-accent transition-colors text-sm">CV</a>
+                        <span class="text-portfolio-dim">|</span>
+<div class="language-switcher">
+                            <a href="http://127.0.0.1:8000?lang=es" class="active">ES</a>
+                            <span class="text-portfolio-dim">/</span>
+                            <a href="http://127.0.0.1:8000?lang=en" class="">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+            <!-- Hero Section -->
+<section id="hero" class="min-h-[80vh] flex items-center fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Left Content -->
+            <div class="space-y-6">
+                <span class="font-mono font-bold text-xl sm:text-2xl tracking-widest uppercase" style="background: linear-gradient(to right, #ffffff, #ff0055); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    &gt; Ingeniero de Sistemas | Desarrollador Full-Stack
+                </span>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                    <span style="background: linear-gradient(to right, #ffffff, #ff0055); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Kevin Abel Venegas Bermúdez</span>
+                </h1>
+
+                <p class="text-portfolio-text-relaxed text-base sm:text-lg max-w-xl leading-relaxed">
+                    Egresado de Ingeniería en Sistemas con experiencia en desarrollo Full Stack utilizando Java (Spring Boot), React, PHP (Laravel) y bases de datos relacionales. Experiencia en diseño e integración de APIs REST, desarrollo de interfaces web modernas y automatización de procesos. Orientado a la calidad del código, resolución de problemas y aprendizaje rápido en entornos colaborativos.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#proyectos"
+                       class="inline-flex items-center gap-2 bg-portfolio-accent text-white px-6 py-3 rounded-xl font-extrabold text-sm uppercase tracking-wider no-underline hover:scale-105 transition-transform duration-300 shadow-lg shadow-portfolio-accent/20">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                        </svg>
+                        Ver Proyectos
+                    </a>
+                    
+                    <!-- CV Download with Dropdown -->
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open"
+                                @click.outside="open = false"
+                                class="inline-flex items-center gap-2 border border-portfolio-accent text-portfolio-accent px-6 py-3 rounded-xl font-extrabold text-sm uppercase tracking-wider no-underline hover:scale-105 hover:bg-portfolio-accent/10 hover:border-portfolio-accent active:scale-95 active:bg-portfolio-accent/20 transition-all duration-300 shadow-lg shadow-portfolio-accent/20">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                            </svg>
+                            Descargar CV
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        
+                        <!-- Dropdown Menu -->
+                        <div x-show="open"
+                             x-cloak
+                             x-transition:enter="transition ease-out duration-200"
+                             x-transition:enter-start="opacity-0 -translate-y-2"
+                             x-transition:enter-end="opacity-100 translate-y-0"
+                             class="absolute left-0 mt-2 w-48 bg-portfolio-card border border-portfolio-border/50 rounded-xl overflow-hidden z-50 shadow-xl">
+                            <a href="/cv/Kevin Venegas Bermúdez - CV - ES.pdf"
+                               target="_blank"
+                               class="flex items-center gap-2 px-4 py-3 text-portfolio-dim hover:bg-portfolio-accent/10 hover:text-portfolio-accent transition-colors no-underline">
+                                <span>🇪🇸</span>
+                                <span class="text-sm">Español</span>
+                            </a>
+                            <a href="/cv/Kevin Venegas Bermúdez - CV - EN.pdf"
+                               target="_blank"
+                               class="flex items-center gap-2 px-4 py-3 text-portfolio-dim hover:bg-portfolio-accent/10 hover:text-portfolio-accent transition-colors no-underline">
+                                <span>🇺🇸</span>
+                                <span class="text-sm">English</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Profile Photo -->
+            <div class="flex justify-center lg:justify-end">
+                <div class="relative">
+                    <!-- Ambient glow behind photo -->
+                    <div class="absolute inset-0 bg-portfolio-accent/30 rounded-3xl blur-3xl scale-110" aria-hidden="true"></div>
+
+                    <!-- Photo frame with glowing shadow -->
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-3xl overflow-hidden border-2 border-portfolio-accent/50 shadow-[0_20px_60px_rgba(255,0,85,0.2)]">
+                        <img src="http://127.0.0.1:8000/images/Kevin.png"
+                             alt="Foto de perfil de Kevin Abel Venegas Bermúdez"
+                             class="w-full h-full object-cover"
+                             loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Skills Section -->
+<section id="habilidades" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Habilidades Técnicas</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Tecnologías y herramientas que utilizo para construir soluciones digitales.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Lenguajes
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Java
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                JavaScript
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                TypeScript
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Kotlin
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                PHP
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                SQL
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Frameworks
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Spring Boot
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                React
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                React Native
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Laravel
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                .NET
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Node.js
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Backend y APIs
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                APIs REST
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                JWT Auth
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                RBAC
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Arquitectura en Capas
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Bases de Datos
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                SQL Server
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                MySQL
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                PostgreSQL
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Desarrollo Móvil
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Kotlin
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Jetpack Compose
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Room
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Retrofit
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        DevOps
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Git
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Gitflow
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                GitHub Actions
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Azure DevOps
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Docker
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Herramientas
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Postman
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Figma
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Jira
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Notion
+                            </span>
+                                            </div>
+                </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover skills-group">
+                    <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                        Metodologías
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Agile
+                            </span>
+                                                    <span class="badge-stagger font-mono text-xs text-portfolio-cyan bg-portfolio-cyan/10 px-3 py-1 rounded-full">
+                                Scrum (Certificado)
+                            </span>
+                                            </div>
+                </div>
+                    </div>
+
+        <!-- Languages -->
+        <div class="mt-12 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 fade-in-section">
+            <h3 class="font-mono text-sm font-semibold text-portfolio-text mb-4 uppercase tracking-wider">
+                Idiomas
+            </h3>
+            <div class="flex flex-wrap gap-6">
+                                    <div>
+                        <span class="text-portfolio-text font-semibold">Español</span>
+                        <span class="text-portfolio-dim text-sm ml-2">— Nativo</span>
+                    </div>
+                                    <div>
+                        <span class="text-portfolio-text font-semibold">Inglés</span>
+                        <span class="text-portfolio-dim text-sm ml-2">— Intermedio</span>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</section>
+    <!-- Experience Section -->
+<section id="experiencia" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Experiencia Profesional</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Mi trayectoria profesional y contribuciones más recientes.
+        </p>
+
+        <div class="space-y-12">
+                            <div class="relative pl-8 border-l-2 border-portfolio-accent">
+                    <!-- Timeline dot -->
+                    <div class="absolute left-[-6px] top-0 w-3 h-3 rounded-full bg-portfolio-accent"></div>
+
+                    <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover">
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-portfolio-text">
+                                    LetParley
+                                </h3>
+                                <p class="font-mono text-sm text-portfolio-accent mt-1">
+                                    Pasante de Desarrollo de Software
+                                </p>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-mono text-xs text-portfolio-dim block">2025</span>
+                                <span class="font-mono text-xs text-portfolio-dim">Remoto — Costa Rica</span>
+                            </div>
+                        </div>
+
+                        <ul class="space-y-3">
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Desarrollo de asistentes virtuales empresariales utilizando n8n con flujos conversacionales, lógica condicional y programación de tareas.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Optimización de arquitectura serverless en n8n mediante refinamiento de flujos lógicos, reduciendo el consumo de tokens de LLM y costos operativos.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Diseño e implementación de 15+ flujos de automatización para reservas y gestión de calendarios.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Desarrollo de la landing page LPTrips con React, Vite y Tailwind CSS, mejorando SEO y accesibilidad.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Colaboración en la optimización de la landing page MenuPlatz.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Documentación técnica de integraciones, analítica y control de accesos.</span>
+                                </li>
+                                                            <li class="flex gap-3 text-portfolio-dim text-sm leading-relaxed">
+                                    <svg class="w-5 h-5 text-portfolio-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    <span>Trabajo bajo metodología Scrum utilizando Azure DevOps, Notion y GitHub.</span>
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+    <!-- Projects Section -->
+<section id="proyectos" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Proyectos Destacados</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Proyectos que he construido, desde APIs hasta aplicaciones móviles.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <article class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-lg font-bold text-portfolio-text">
+                            Force Gym
+                        </h3>
+                        <span class="font-mono text-xs text-portfolio-dim">2024–2025</span>
+                    </div>
+
+                    <p class="text-portfolio-dim text-sm leading-relaxed mb-6 flex-grow">
+                        Sistema de gestión integral para gimnasio (Enterprise Suite). API REST con Java Spring Boot, autenticación JWT, control de acceso basado en roles, gestión de usuarios, membresías y notificaciones automáticas. Dashboard administrativo con métricas en tiempo real para optimización de finanzas. Implementación real para Force Gym. Estrategia de ambientes: diseño de arquitectura híbrida utilizando Supabase para prototipado rápido y migración a SQL Server para entornos de producción de alta disponibilidad.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Java
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Spring Boot
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                React
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                SQL Server
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Supabase
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Jest
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                GitHub Actions
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                JWT
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                CI/CD
+                            </span>
+                                            </div>
+
+                    <div class="flex gap-4 mt-auto">
+                                                                    </div>
+                </article>
+                            <article class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-lg font-bold text-portfolio-text">
+                            Orbis
+                        </h3>
+                        <span class="font-mono text-xs text-portfolio-dim">2025</span>
+                    </div>
+
+                    <p class="text-portfolio-dim text-sm leading-relaxed mb-6 flex-grow">
+                        Aplicación web para planificación de viajes con IA. Integración de múltiples APIs REST (REST Countries, Wikipedia). Chatbot utilizando modelos de IA de Hugging Face con Transformers. Participación en arquitectura, base de datos y UI/UX.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                React
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                REST APIs
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                IA
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Hugging Face
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Transformers
+                            </span>
+                                            </div>
+
+                    <div class="flex gap-4 mt-auto">
+                                                                    </div>
+                </article>
+                            <article class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover flex flex-col">
+                    <div class="flex items-start justify-between mb-4">
+                        <h3 class="text-lg font-bold text-portfolio-text">
+                            Yetify
+                        </h3>
+                        <span class="font-mono text-xs text-portfolio-dim">2024</span>
+                    </div>
+
+                    <p class="text-portfolio-dim text-sm leading-relaxed mb-6 flex-grow">
+                        Aplicación móvil con Kotlin y Jetpack Compose siguiendo arquitectura MVVM. Persistencia local con Room y consumo de APIs con Retrofit. Funcionalidades de tareas, recordatorios y notificaciones.
+                    </p>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Kotlin
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Jetpack Compose
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                MVVM
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Room
+                            </span>
+                                                    <span class="font-mono text-[0.65rem] text-portfolio-cyan bg-portfolio-cyan/10 px-2.5 py-1 rounded-full">
+                                Retrofit
+                            </span>
+                                            </div>
+
+                    <div class="flex gap-4 mt-auto">
+                                                                    </div>
+                </article>
+                    </div>
+    </div>
+</section>
+    <!-- Coming Soon Videos Section -->
+<section id="videos" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Videos Próximos</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Demostraciones en video de mis proyectos y experimentos con IA.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Coming Soon Card 1 -->
+            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-portfolio-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+                    PRÓXIMO
+                </div>
+                <div class="w-full h-40 bg-portfolio-bg rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-16 h-16 text-portfolio-dim opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-portfolio-text mb-2">
+                    Force Gym - Demo
+                </h3>
+                <p class="text-portfolio-dim text-sm">
+                    Demo completa de la aplicación de gestión de gimnasio con todas sus funcionalidades.
+                </p>
+            </div>
+
+            <!-- Coming Soon Card 2 -->
+            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-portfolio-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+                    PRÓXIMO
+                </div>
+                <div class="w-full h-40 bg-portfolio-bg rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-16 h-16 text-portfolio-dim opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-portfolio-text mb-2">
+                    API REST con Spring Boot
+                </h3>
+                <p class="text-portfolio-dim text-sm">
+                    Tutorial de cómo construir una API REST segura con Spring Boot y JWT.
+                </p>
+            </div>
+
+            <!-- Coming Soon Card 3 -->
+            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-portfolio-accent text-white text-xs font-bold px-3 py-1 rounded-bl-xl">
+                    PRÓXIMO
+                </div>
+                <div class="w-full h-40 bg-portfolio-bg rounded-xl flex items-center justify-center mb-4">
+                    <svg class="w-16 h-16 text-portfolio-dim opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-portfolio-text mb-2">
+                    IA con Transformers
+                </h3>
+                <p class="text-portfolio-dim text-sm">
+                    Implementación de modelos de lenguaje con Hugging Face.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>    <!-- Certifications Section -->
+<section id="certificaciones" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Certificaciones</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Certificaciones y cursos profesionales completados.
+        </p>
+
+        <div class="space-y-4">
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-l-2 border-l-portfolio-accent">
+                    <div>
+                        <h3 class="text-portfolio-text font-semibold">
+                            Scrum Foundation Professional Certification (SFPC)
+                        </h3>
+                        <p class="text-portfolio-dim text-sm mt-1">
+                            CertiProf
+                        </p>
+                    </div>
+                                    </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-l-2 border-l-portfolio-accent">
+                    <div>
+                        <h3 class="text-portfolio-text font-semibold">
+                            Introducción al Desarrollo con IA: De 0 a Producción
+                        </h3>
+                        <p class="text-portfolio-dim text-sm mt-1">
+                            BIG School
+                        </p>
+                    </div>
+                                            <span class="font-mono text-xs text-portfolio-dim flex-shrink-0">
+                            2026
+                        </span>
+                                    </div>
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-l-2 border-l-portfolio-accent">
+                    <div>
+                        <h3 class="text-portfolio-text font-semibold">
+                            Career Accelerator con Power BI + IA
+                        </h3>
+                        <p class="text-portfolio-dim text-sm mt-1">
+                            Daxus Latam
+                        </p>
+                    </div>
+                                            <span class="font-mono text-xs text-portfolio-dim flex-shrink-0">
+                            2026
+                        </span>
+                                    </div>
+                    </div>
+    </div>
+</section>
+    <!-- Education Section -->
+<section id="educacion" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Educación</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            Formación académica y desarrollo profesional.
+        </p>
+
+        <div class="space-y-6">
+                            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-portfolio-text">
+                                Universidad Nacional de Costa Rica
+                            </h3>
+                            <p class="text-portfolio-dim mt-2">
+                                Bachillerato en Ingeniería en Sistemas de Información
+                            </p>
+                        </div>
+                        <div class="text-right flex-shrink-0">
+                            <span class="font-mono text-sm text-portfolio-dim block">2022 — 2025</span>
+                            <span class="font-mono text-sm text-portfolio-cyan mt-1 block">
+                                GPA: 8.66
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+<section id="contacto" class="py-20 fade-in-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">Contacto</span>
+        </h2>
+        <p class="text-portfolio-dim mb-12 max-w-lg">
+            ¿Buscas un desarrollador para tu próximo proyecto o ofreces oportunidades laborales? Escríbeme.
+        </p>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="space-y-6">
+                <div class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5">
+                    <div class="w-12 h-12 rounded-xl bg-portfolio-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-portfolio-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-portfolio-text font-semibold">Email</p>
+                        <p class="text-portfolio-dim text-sm">Usa el formulario para contactarme</p>
+                    </div>
+                </div>
+
+                <a href="https://www.linkedin.com/in/kevin-venegas-berm%C3%BAdez/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover no-underline group">
+                    <div class="w-12 h-12 rounded-xl bg-portfolio-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-portfolio-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-portfolio-text font-semibold group-hover:text-portfolio-accent transition-colors">LinkedIn</p>
+                        <p class="text-portfolio-dim text-sm">Kevin Venegas Bermúdez</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Kevin7819"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5 card-hover no-underline group">
+                    <div class="w-12 h-12 rounded-xl bg-portfolio-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-portfolio-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-portfolio-text font-semibold group-hover:text-portfolio-accent transition-colors">GitHub</p>
+                        <p class="text-portfolio-dim text-sm">Kevin7819</p>
+                    </div>
+                </a>
+
+                <div class="flex items-center gap-4 bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-5">
+                    <div class="w-12 h-12 rounded-xl bg-portfolio-accent/10 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-portfolio-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-portfolio-text font-semibold">Ubicación</p>
+                        <p class="text-portfolio-dim text-sm">Heredia, Costa Rica</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover">
+                
+                
+                <form action="http://127.0.0.1:8000/contact" method="POST" class="space-y-5">
+                    <input type="hidden" name="_token" value="MDE8WOiIWRYAaSNdiSBDyAEQfIJiVEjIEr3yJ7if" autocomplete="off">                    <div>
+                        <label for="name" class="block text-sm font-semibold text-portfolio-text mb-2">
+                            Nombre
+                        </label>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               required
+                               placeholder="Tu nombre"
+                               class="w-full bg-portfolio-bg border border-portfolio-border/50 rounded-xl px-4 py-3 text-portfolio-text placeholder-portfolio-dim/50 focus:outline-none focus:border-portfolio-accent focus:ring-1 focus:ring-portfolio-accent transition-colors">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-portfolio-text mb-2">
+                            Email
+                        </label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               required
+                               placeholder="tu@email.com"
+                               class="w-full bg-portfolio-bg border border-portfolio-border/50 rounded-xl px-4 py-3 text-portfolio-text placeholder-portfolio-dim/50 focus:outline-none focus:border-portfolio-accent focus:ring-1 focus:ring-portfolio-accent transition-colors">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-portfolio-text mb-2">
+                            Mensaje
+                        </label>
+                        <textarea id="message"
+                                  name="message"
+                                  required
+                                  rows="5"
+                                  placeholder="¿En qué puedo ayudarte?"
+                                  class="w-full bg-portfolio-bg border border-portfolio-border/50 rounded-xl px-4 py-3 text-portfolio-text placeholder-portfolio-dim/50 focus:outline-none focus:border-portfolio-accent focus:ring-1 focus:ring-portfolio-accent transition-colors resize-none"></textarea>
+                    </div>
+
+                    <button type="submit"
+                            class="w-full bg-portfolio-accent text-white px-6 py-3 rounded-xl font-extrabold text-sm uppercase tracking-wider hover:scale-[1.02] transition-transform duration-300 shadow-lg shadow-portfolio-accent/20">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+    </div>
 
     <script type="module" src="/build/assets/app-CoBtstTC.js"></script>
 </body>
