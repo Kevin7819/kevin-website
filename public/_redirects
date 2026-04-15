@@ -1,2 +1,1 @@
-# Static site - all routes serve index.html for SPA behavior
-/*    /index.html   200
+# Netlify serves index.html automatically for root
