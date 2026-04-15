@@ -1,2 +1,11 @@
+# Permitir que todos los buscadores indexen el portafolio
 User-agent: *
-Disallow:
+Allow: /
+
+# Ayuda a los reclutadores a encontrar tu contenido principal
+Disallow: /vendor/
+Disallow: /storage/
+Disallow: /temp/
+
+# Enlace al Sitemap (si llegas a generar uno más adelante)
+# Sitemap: https://kevin-venegas-bermudez.netlify.app/sitemap.xml
