@@ -10,6 +10,11 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    base: '/',                   
+    build: {
+        manifest: true,
+        outDir: 'public/build', 
+    },
     server: {
         watch: {
             ignored: ['**/storage/framework/views/**'],
