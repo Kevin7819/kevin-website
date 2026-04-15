@@ -1,4 +1,4 @@
-FROM php:8.2-cli
+FROM php:8.3-cli
 
 # Instalar dependencias necesarias
 RUN apt-get update && apt-get install -y \
@@ -17,17 +17,18 @@ COPY . .
 # Instalar dependencias de Laravel
 RUN composer install --no-dev --optimize-autoloader
 
-# Instalar y compilar frontend (Vite)
+# Frontend (Vite)
 RUN npm install && npm run build
 
-# Generar key automáticamente
-RUN php artisan key:generate
+# Configuración Laravel
+RUN cp .env.example .env || true
+RUN php artisan key:generate || true
 
-# Permisos necesarios
+# Permisos
 RUN chmod -R 775 storage bootstrap/cache
 
-# Exponer puerto (Render usa 10000)
+# Puerto
 EXPOSE 10000
 
-# Ejecutar Laravel
+# Ejecutar servidor
 CMD php artisan serve --host=0.0.0.0 --port=10000
