@@ -24,6 +24,9 @@ RUN npm install && npm run build
 RUN cp .env.example .env || true
 RUN php artisan key:generate || true
 
+# Forzar SESSION_DRIVER=cookie (no necesita base de datos)
+RUN sed -i 's/SESSION_DRIVER=.*/SESSION_DRIVER=cookie/' .env
+
 # Permisos
 RUN chmod -R 775 storage bootstrap/cache
 
