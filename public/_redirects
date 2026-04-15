@@ -1,1 +1,2 @@
-# Netlify static site - no redirects needed
+# Static site - all routes serve index.html for SPA behavior
+/*    /index.html   200
