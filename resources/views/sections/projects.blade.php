@@ -1,15 +1,15 @@
 <!-- Projects Section -->
 <section id="proyectos" class="py-20 fade-in-section">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">
-            <span class="gradient-text">Proyectos Destacados</span>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">{{ $content[$lang]['projects']['title'] }}</span>
         </h2>
         <p class="text-portfolio-dim mb-12 max-w-lg">
-            Proyectos que he construido, desde APIs hasta aplicaciones móviles.
+            {{ $content[$lang]['projects']['subtitle'] }}
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            @foreach($projects as $project)
+            @foreach($projectDetails[$lang] as $project)
                 <article class="bg-portfolio-card border border-portfolio-border/50 rounded-2xl p-6 card-hover flex flex-col">
                     <div class="flex items-start justify-between mb-4">
                         <h3 class="text-lg font-bold text-portfolio-text">

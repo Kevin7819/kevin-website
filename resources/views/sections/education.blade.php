@@ -1,11 +1,11 @@
 <!-- Education Section -->
 <section id="educacion" class="py-20 fade-in-section">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">
-            <span class="gradient-text">Educación</span>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">{{ $content[$lang]['education']['title'] }}</span>
         </h2>
         <p class="text-portfolio-dim mb-12 max-w-lg">
-            Mi formación académica universitaria.
+            {{ $content[$lang]['education']['subtitle'] }}
         </p>
 
         <div class="space-y-6">

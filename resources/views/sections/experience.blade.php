@@ -1,15 +1,15 @@
 <!-- Experience Section -->
 <section id="experiencia" class="py-20 fade-in-section">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
-        <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">
-            <span class="gradient-text">Experiencia Profesional</span>
+        <h2 class="text-4xl sm:text-5xl font-extrabold mb-4 text-left">
+            <span class="gradient-text">{{ $content[$lang]['experience']['title'] }}</span>
         </h2>
         <p class="text-portfolio-dim mb-12 max-w-lg">
-            Mi trayectoria profesional y contribuciones más recientes.
+            {{ $content[$lang]['experience']['subtitle'] }}
         </p>
 
         <div class="space-y-12">
-            @foreach($experience as $exp)
+            @foreach($experience[$lang] as $exp)
                 <div class="relative pl-8 border-l-2 border-portfolio-accent">
                     <!-- Timeline dot -->
                     <div class="absolute left-[-6px] top-0 w-3 h-3 rounded-full bg-portfolio-accent"></div>
